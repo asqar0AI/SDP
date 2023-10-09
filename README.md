@@ -44,3 +44,13 @@ In this project, the Factory Design Pattern is applied to create different types
 - `public abstract String getHDD()`: An abstract method to get the HDD specification of the computer.
 - `public abstract String getCPU()`: An abstract method to get the CPU specification of the computer.
 - `@Override public String toString()`: Overrides the `toString()` method to return a string representation of the computer's specifications, including RAM, HDD, and CPU.
+
+### design/abstractfactory/ComputerAbstractFactory.java
+
+#### Interface Description
+- The `ComputerAbstractFactory` interface is a part of the Factory Design Pattern implementation in this project.
+- It defines a contract for creating instances of `Computer` objects.
+- The purpose of this interface is to allow concrete factories to produce computer objects with specific configurations while adhering to a common factory pattern.
+
+#### Methods
+- `Computer createComputer()`: This method is responsible for creating and returning a `Computer` object. Concrete classes implementing this interface will provide their own implementation of this method, producing different types of computers, such as PCs or Servers.
