@@ -139,3 +139,14 @@ In this project, the Factory Design Pattern is applied to create different types
 - `@Override public String getHDD()`: Overrides the `getHDD()` method to provide information about the HDD capacity of the server.
 - `@Override public String getCPU()`: Overrides the `getCPU()` method to return the CPU frequency of the server.
 - `@Override public String toString()`: Overrides the `toString()` method to display the server's specifications, including RAM, HDD, and CPU.
+
+### design/test/TestDesignPatterns.java
+
+#### Class Description
+- The `TestDesignPatterns` class serves as the main entry point for testing the Factory Design Pattern and Abstract Factory Pattern in this project.
+- It includes a `main` method that invokes the `testAbstractFactory` method to demonstrate the creation of different computer models using the Abstract Factory pattern.
+
+#### Methods
+- `public static void main(String[] args)`: The main method that is called when the program is executed. It invokes the `testAbstractFactory` method.
+
+- `private static void testAbstractFactory()`: A private method dedicated to demonstrating the Abstract Factory pattern. It creates instances of `PC` and `Server` models using the `ComputerFactory` class and specific factory implementations.
