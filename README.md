@@ -109,3 +109,18 @@ In this project, the Factory Design Pattern is applied to create different types
 - `public abstract String getHDD()`: An abstract method to get the HDD specification of the computer.
 - `public abstract String getCPU()`: An abstract method to get the CPU specification of the computer.
 - `@Override public String toString()`: Overrides the `toString()` method to return a string representation of the computer's specifications, including RAM, HDD, and CPU.
+
+### design/model/PC.java
+
+#### Class Description
+- The `PC` class is a concrete implementation of the `Computer` abstract class, representing a specific computer model, a personal computer.
+- It provides information about the PC's RAM, HDD, and CPU specifications.
+
+#### Constructor
+- `public PC(String ram, String hdd, String cpu)`: This constructor initializes the PC's specifications, including RAM size, HDD capacity, and CPU frequency.
+
+#### Methods
+- `@Override public String getRAM()`: Overrides the `getRAM()` method from the abstract `Computer` class to provide the RAM specification of the PC.
+- `@Override public String getHDD()`: Overrides the `getHDD()` method to provide information about the HDD capacity of the PC.
+- `@Override public String getCPU()`: Overrides the `getCPU()` method to return the CPU frequency of the PC.
+- `@Override public String toString()`: Overrides the `toString()` method to display the PC's specifications, including RAM, HDD, and CPU.
