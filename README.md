@@ -88,3 +88,12 @@ In this project, the Factory Design Pattern is applied to create different types
 
 #### Methods
 - `@Override public Computer createComputer()`: This method overrides the `createComputer()` method defined in the `ComputerAbstractFactory` interface. It creates and returns a new `Server` object with the specifications provided during construction.
+
+### design/factory/ComputerFactory.java
+
+#### Class Description
+- The `ComputerFactory` class is another component in the Factory Design Pattern implementation of this project.
+- It provides a static method for creating instances of specific `Computer` models, such as `PC` and `Server`, based on the given type and specifications.
+
+#### Methods
+- `public static Computer getComputer(String type, String ram, String hdd, String cpu)`: This static method is responsible for creating and returning a `Computer` object. It takes a `type` parameter to determine the specific type of computer to create (e.g., "PC" or "Server") and also accepts specifications for RAM, HDD, and CPU. Based on the `type`, it creates and returns an instance of the corresponding computer model.
