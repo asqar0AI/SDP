@@ -76,3 +76,15 @@ In this project, the Factory Design Pattern is applied to create different types
 
 #### Methods
 - `@Override public Computer createComputer()`: This method overrides the `createComputer()` method defined in the `ComputerAbstractFactory` interface. It creates and returns a new `PC` object with the specifications provided during construction.
+
+### design/abstractfactory/ServerFactory.java
+
+#### Class Description
+- The `ServerFactory` class is another concrete factory implementation of the `ComputerAbstractFactory` interface.
+- It is responsible for creating instances of the `Server` class, a specific computer model tailored for server environments.
+
+#### Constructor
+- `public ServerFactory(String ram, String hdd, String cpu)`: This constructor takes the specifications for RAM, HDD, and CPU as parameters and initializes the instance variables within the factory.
+
+#### Methods
+- `@Override public Computer createComputer()`: This method overrides the `createComputer()` method defined in the `ComputerAbstractFactory` interface. It creates and returns a new `Server` object with the specifications provided during construction.
