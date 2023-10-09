@@ -54,3 +54,13 @@ In this project, the Factory Design Pattern is applied to create different types
 
 #### Methods
 - `Computer createComputer()`: This method is responsible for creating and returning a `Computer` object. Concrete classes implementing this interface will provide their own implementation of this method, producing different types of computers, such as PCs or Servers.
+
+### design/abstractfactory/ComputerFactory.java
+
+#### Class Description
+- The `ComputerFactory` class is a key component in the Factory Design Pattern implementation of this project.
+- It acts as a client and provides a method for creating `Computer` objects through the use of a `ComputerAbstractFactory`.
+- This class promotes the decoupling of the client code from the specific details of creating different computer models.
+
+#### Methods
+- `public static Computer getComputer(ComputerAbstractFactory factory)`: This static method takes a `ComputerAbstractFactory` as a parameter and uses it to create a `Computer` object. It delegates the creation of the computer to the provided factory, adhering to the Factory Design Pattern.
