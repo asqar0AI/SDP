@@ -150,3 +150,19 @@ In this project, the Factory Design Pattern is applied to create different types
 - `public static void main(String[] args)`: The main method that is called when the program is executed. It invokes the `testAbstractFactory` method.
 
 - `private static void testAbstractFactory()`: A private method dedicated to demonstrating the Abstract Factory pattern. It creates instances of `PC` and `Server` models using the `ComputerFactory` class and specific factory implementations.
+
+### design/test/TestFactory.java
+
+#### Class Description
+- The `TestFactory` class serves as the main entry point for testing the Factory Design Pattern in this project.
+- It includes a `main` method that demonstrates the creation of different computer models using the Factory Method pattern.
+
+#### Methods
+- `public static void main(String[] args)`: The main method that is called when the program is executed. It creates instances of `PC` and `Server` models using the `ComputerFactory` class and the specified type and specifications.
+  The `TestDesignPatterns` and `TestFactory` classes showcase the usage of the Abstract Factory pattern and Factory Method pattern, respectively, by creating specific computer models with varying specifications and printing the configurations of the created objects.
+
+
+
+---
+
+For more details on the project and specific information about each Java file, please refer to the respective file's documentation.
