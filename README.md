@@ -97,3 +97,15 @@ In this project, the Factory Design Pattern is applied to create different types
 
 #### Methods
 - `public static Computer getComputer(String type, String ram, String hdd, String cpu)`: This static method is responsible for creating and returning a `Computer` object. It takes a `type` parameter to determine the specific type of computer to create (e.g., "PC" or "Server") and also accepts specifications for RAM, HDD, and CPU. Based on the `type`, it creates and returns an instance of the corresponding computer model.
+
+### design/model/Computer.java
+
+#### Class Description
+- The `Computer` class represents an abstract base class for all computer models in the project.
+- It defines the common structure for computer models, with abstract methods to retrieve information about RAM, HDD, and CPU specifications.
+
+#### Methods
+- `public abstract String getRAM()`: An abstract method to get the RAM specification of the computer.
+- `public abstract String getHDD()`: An abstract method to get the HDD specification of the computer.
+- `public abstract String getCPU()`: An abstract method to get the CPU specification of the computer.
+- `@Override public String toString()`: Overrides the `toString()` method to return a string representation of the computer's specifications, including RAM, HDD, and CPU.
