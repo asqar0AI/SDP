@@ -124,3 +124,18 @@ In this project, the Factory Design Pattern is applied to create different types
 - `@Override public String getHDD()`: Overrides the `getHDD()` method to provide information about the HDD capacity of the PC.
 - `@Override public String getCPU()`: Overrides the `getCPU()` method to return the CPU frequency of the PC.
 - `@Override public String toString()`: Overrides the `toString()` method to display the PC's specifications, including RAM, HDD, and CPU.
+
+### design/model/Server.java
+
+#### Class Description
+- The `Server` class is another concrete implementation of the `Computer` abstract class, representing a specific computer model, a server.
+- It provides information about the server's RAM, HDD, and CPU specifications.
+
+#### Constructor
+- `public Server(String ram, String hdd, String cpu)`: This constructor initializes the server's specifications, including RAM size, HDD capacity, and CPU frequency.
+
+#### Methods
+- `@Override public String getRAM()`: Overrides the `getRAM()` method from the abstract `Computer` class to provide the RAM specification of the server.
+- `@Override public String getHDD()`: Overrides the `getHDD()` method to provide information about the HDD capacity of the server.
+- `@Override public String getCPU()`: Overrides the `getCPU()` method to return the CPU frequency of the server.
+- `@Override public String toString()`: Overrides the `toString()` method to display the server's specifications, including RAM, HDD, and CPU.
