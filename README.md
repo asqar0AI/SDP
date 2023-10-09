@@ -26,3 +26,21 @@ src<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── TestFactory.java<br>
 
 
+
+## How the Factory Design Pattern is Used
+In this project, the Factory Design Pattern is applied to create different types of computers, including PCs and Servers. The pattern provides an abstract factory interface (ComputerAbstractFactory) and concrete factory implementations (PCFactory and ServerFactory) to produce instances of these computers. The ComputerFactory class is responsible for creating the computer objects.
+
+## Project Files
+
+### design/abstractfactory/Computer.java
+
+#### Class Description
+- This class, `Computer`, is the abstract base class for different computer models in the Factory Design Pattern implementation.
+- It defines a basic computer structure with abstract methods to retrieve information about RAM, HDD, and CPU.
+- Additionally, it provides a `toString()` method to display the computer's specifications.
+
+#### Methods
+- `public abstract String getRAM()`: An abstract method to get the RAM specification of the computer.
+- `public abstract String getHDD()`: An abstract method to get the HDD specification of the computer.
+- `public abstract String getCPU()`: An abstract method to get the CPU specification of the computer.
+- `@Override public String toString()`: Overrides the `toString()` method to return a string representation of the computer's specifications, including RAM, HDD, and CPU.
